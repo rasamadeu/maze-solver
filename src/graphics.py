@@ -7,7 +7,9 @@ class Window:
         self.__root.title = 'Maze Solver'
         self.__root.geometry(f"{width}x{height}")
 
-        self.__canvas = Canvas(width=width, height=height)
+        self.__canvas = Canvas(background='white',
+                               width=width,
+                               height=height)
         self.__canvas.pack(expand=1, fill=BOTH)
 
         self.__is_running = False
